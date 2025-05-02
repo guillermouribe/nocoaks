@@ -36,7 +36,7 @@
     "start:backend": "pnpm --filter=nocodb run start",
     "lint:staged:playwright": "cd ./tests/playwright; pnpm dlx lint-staged; cd -",
     "start": "node packages/nocodb/bin/www",
-    "build": "pnpm --filter nocodb-ui... build"
+    "build": "pnpm --filter nocodb-ui... build",
     "prepare": "husky install",
     "preinstall": "npx only-allow pnpm",
     "registerIntegrations": "pnpm --filter=nocodb run registerIntegrations",
