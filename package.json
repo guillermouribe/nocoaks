@@ -35,10 +35,8 @@
     "start:frontend": "pnpm --filter=nc-gui run dev",
     "start:backend": "pnpm --filter=nocodb run start",
     "lint:staged:playwright": "cd ./tests/playwright; pnpm dlx lint-staged; cd -",
-    "start:mysql": "docker-compose -f ./tests/playwright/scripts/docker-compose-mysql-playwright.yml up -d",
-    "stop:mysql": "docker-compose -f ./tests/playwright/scripts/docker-compose-mysql-playwright.yml down",
-    "start:pg": "docker-compose -f ./tests/playwright/scripts/docker-compose-pg.yml up -d",
-    "stop:pg": "docker-compose -f ./tests/playwright/scripts/docker-compose-pg.yml down",
+    "start": "node packages/nocodb/bin/www",
+    "build": "pnpm --filter nocodb-ui... build"
     "prepare": "husky install",
     "preinstall": "npx only-allow pnpm",
     "registerIntegrations": "pnpm --filter=nocodb run registerIntegrations",
