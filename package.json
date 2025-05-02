@@ -36,7 +36,7 @@
     "start:frontend": "pnpm --filter=nc-gui run dev",
     "start:backend": "pnpm --filter=nocodb run start",
     "lint:staged:playwright": "cd ./tests/playwright; pnpm dlx lint-staged; cd -",
-    "start": "pnpm --filter nocodb exec tsx packages/nocodb/src/index.ts",
+    "start": "tsx packages/nocodb/src/index.ts",
   "build": "pnpm --filter nocodb-ui... build && pnpm --filter nocodb build",
     "prepare": "husky install",
     "preinstall": "npx only-allow pnpm",
